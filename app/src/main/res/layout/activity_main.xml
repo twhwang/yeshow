@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ScrollChild" >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0"
+                android:id="@+id/tableTopEv">
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:background="#202020"
+                        android:text="▶ 이벤트 중인 레스토랑"
+                        android:fontFamily="serif"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="14dp" />
+                </TableRow>
+                <TableRow>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_span="2"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_01"
+                        android:id="@+id/topEventImg" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="| 파슨스"
+                        android:padding="10dp"
+                        android:textSize="18dp"
+                        android:textColor="#202020"
+                        android:id="@+id/topEventTit" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="예약"
+                        android:backgroundTint="#202020"
+                        android:textColor="#fff"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/btnReservation" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:text="파슨스는 멋진 분위기와 감성을 가진 이탈리안 레스토랑 입니다."
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="14dp"
+                        android:textColor="#202020"
+                        android:id="@+id/topEventTxt" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0"
+                android:id="@+id/tablePick">
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:background="#202020"
+                        android:text="▶ 오늘의 추천 메뉴"
+                        android:fontFamily="serif"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#fff"
+                        android:textSize="14dp" />
+                </TableRow>
+                <TableRow>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_span="2"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_02"
+                        android:id="@+id/pickMenuImg" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="| 이탈리안 정통 피자"
+                        android:padding="10dp"
+                        android:textSize="18dp"
+                        android:textColor="#202020"
+                        android:id="@+id/pickMenuTit" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="목록 열기"
+                        android:backgroundTint="#202020"
+                        android:textColor="#fff"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/loadGridView" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:text="예스쇼에서 추천하는 오늘의 메뉴!"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="14dp"
+                        android:textColor="#202020"
+                        android:id="@+id/pickMenuTxt" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#202020"
+                android:text="▶ 국가별 음식 테마"
+                android:fontFamily="serif"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+            <Gallery
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:spacing="5dp"
+                android:id="@+id/themeGallery" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

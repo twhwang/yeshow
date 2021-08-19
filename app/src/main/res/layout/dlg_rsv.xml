@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예약결과 확인"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        android:background="#202020"
+        android:padding="15dp"
+        android:gravity="center" />
+    <TableLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약자 : "
+                android:textSize="16dp"
+                android:textColor="#202020" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#202020"
+                android:id="@+id/rsvName" />
+        </TableRow>
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약 인원 : "
+                android:textSize="16dp"
+                android:textColor="#202020" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#202020"
+                android:id="@+id/rsvNum" />
+        </TableRow>
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="연락처 : "
+                android:textSize="16dp"
+                android:textColor="#202020" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#202020"
+                android:id="@+id/rsvPhone" />
+        </TableRow>
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약석 타입 : "
+                android:textSize="16dp"
+                android:textColor="#202020" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#202020"
+                android:id="@+id/rsvSeat" />
+        </TableRow>
+        <TableRow android:layout_marginBottom="10dp" android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약 보증금 : "
+                android:textSize="16dp"
+                android:textColor="#202020" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#d44"
+                android:text="￦8,000 (업체 방문 시 반환됩니다.)"/>
+        </TableRow>
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약 일시 : "
+                android:textSize="16dp"
+                android:textColor="#202020" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#202020"
+                android:id="@+id/rsvDateTime" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

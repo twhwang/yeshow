@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/img_01"
+                android:scaleType="centerCrop"
+                android:id="@+id/resvImg" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="파슨스"
+                        android:textColor="#fff"
+                        android:background="#202020"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="이탈리안"
+                        android:textColor="#808080"
+                        android:textSize="13dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text=" | "
+                        android:textColor="#808080"
+                        android:textSize="13dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="부산광역시 해운대구 우동"
+                        android:textColor="#808080"
+                        android:textSize="13dp" />
+                </LinearLayout>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:stretchColumns="0, 1"
+                    android:id="@+id/resvTable">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="예약자 성명"
+                            android:textColor="#808080"
+                            android:textSize="16dp" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/inputRName" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="예약자 인원"
+                            android:textColor="#808080"
+                            android:textSize="16dp" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/inputRNum" />
+                    </TableRow>
+                    <TableRow android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="예약자 연락처"
+                            android:textColor="#808080"
+                            android:textSize="16dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Spinner
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spinPhone" />
+                            <EditText
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="phone"
+                                android:id="@+id/inputPhone" />
+                        </LinearLayout>
+                    </TableRow>
+                    <TableRow android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="예약석 타입"
+                            android:textColor="#808080"
+                            android:textSize="16dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/rd_Seat"
+                                android:orientation="horizontal">
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/rd_Seat01"
+                                    android:checked="true"
+                                    android:text="추천석" />
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/rd_Seat02"
+                                    android:text="바 타입" />
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/rd_Seat03"
+                                    android:text="테이블" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </TableRow>
+                    <TableRow android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="예약 희망일"
+                            android:textColor="#808080"
+                            android:textSize="16dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <Button
+                                android:id="@+id/btnDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:backgroundTint="#202020"
+                                android:textColor="#fff"
+                                android:textSize="14dp"
+                                android:text="예약날짜 선택" />
+                            <Button
+                                android:id="@+id/btnTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#202020"
+                                android:textColor="#fff"
+                                android:textSize="14dp"
+                                android:text="예약시간 선택" />
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#aaa"
+                    android:textColor="#fff"
+                    android:id="@+id/btnRsvCancel"
+                    android:stateListAnimator="@null"
+                    android:text="취 소" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#202020"
+                    android:textColor="#fff"
+                    android:id="@+id/btnRsvComplete"
+                    android:stateListAnimator="@null"
+                    android:text="예약하기" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
